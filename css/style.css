@@ -12,3 +12,15 @@ nav {
     object-fit: cover;
     width: 100%;
   }
+  
+  .parallax-text {
+    position: absolute;
+    bottom: 20px; /* Abstand zum unteren Rand */
+    left: 20px; /* Abstand zum linken Rand */
+    color: white;
+    opacity: 0; /* Standardmäßig unsichtbar */
+    transition: opacity 0.3s ease;
+  }
+  .parallax-container:hover .parallax-text {
+    opacity: 1; /* Sichtbar beim Hover */
+  }
