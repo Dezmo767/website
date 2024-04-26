@@ -1,0 +1,14 @@
+/* Anpassung der Navbar-Farbe */
+nav {
+    background-color: #BF261F !important;
+}
+.parallax-container {
+    min-height: 500px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+  }
+  .parallax-container .parallax img {
+    object-fit: cover;
+    width: 100%;
+  }
