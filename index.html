@@ -15,13 +15,20 @@
     <!-- Navbar -->
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Meine Webseite</a>
+            <a href="#" class="brand-logo">Moreno</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#projects">Projekte</a></li>
                 <li><a href="#cv">Lebenslauf</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- Side Navigation (für Handys) -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#projects">Projekte</a></li>
+        <li><a href="#cv">Lebenslauf</a></li>
+    </ul>
 
     <!-- Projekte -->
     <section id="projects" class="section">
@@ -48,11 +55,13 @@
             </div>
         </div>
     </section>
+
     <!-- Parallax - Lebenslauf -->
     <div class="parallax-container">
         <div class="parallax"><img src="img/paralax.jpg" alt="Cover designed by Freepik"></div>
         <div class="parallax-text">Cover designed by Freepik</div>
-      </div>
+    </div>
+
     <!-- Lebenslauf als Bild -->
     <section id="cv" class="section grey lighten-4">
         <div class="container">
@@ -63,18 +72,7 @@
 
     <!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Initialisierung des Materialize-Nav-Menüs -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
-        // Parallax initialisieren
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.parallax');
-            var instances = M.Parallax.init(elems);
-        });
-    </script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
